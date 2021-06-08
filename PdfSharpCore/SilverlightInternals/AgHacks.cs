@@ -42,6 +42,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 #endif
 
+#if SILVERLIGHT
 public class BrowsableAttribute : Attribute
 {
     public BrowsableAttribute(bool browsable)
@@ -65,7 +66,7 @@ public interface ICloneable
     /// </summary>
     Object Clone();
 }
-
+#endif
 namespace PdfSharpCore
 {
     /// <summary>
